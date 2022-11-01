@@ -21,8 +21,8 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "2450306380@qq.com"}
-  - {title: Bilibili, icon: github, url: "https://space.bilibili.com/353417350"}
-  - {title: Subscribe, icon: rss, url: "/feed.xml"}
+  - {title: Github, icon: github, url: "https://github.com/settings/profile"}
+  - {title: Bilibili, icon: rss, url: "https://space.bilibili.com/353417350"}
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
