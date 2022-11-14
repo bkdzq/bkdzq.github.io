@@ -1,5 +1,5 @@
 ---
-title:  "博客说明 blog description"
+title:  "up主历史项目 || my coding project"
 mathjax: true
 layout: post
 categories: media
@@ -27,3 +27,11 @@ below is the web-dev project that i deploy on server already, you can access the
 <a href = "https://bkdzq.github.io/PoliticRecog/">https://bkdzq.github.io/PoliticRecog/</a>
 
 
+<li  color = "red">3. QR code generator, you can generate QR code from texts or links || 二维码生成器</li>
+
+<a href = "https://bkdzq.github.io/qrcodegenerator/">https://bkdzq.github.io/qrcodegenerator/</a>
+
+
+<li  color = "red">4. QR code reader, you can read QR code via using my web api || 二维码读取器</li>
+
+<a href = "https://bkdzq.github.io/qrcodereader/">https://bkdzq.github.io/qrcodereader/</a>
