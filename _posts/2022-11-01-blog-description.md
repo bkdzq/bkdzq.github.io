@@ -35,3 +35,7 @@ below is the web-dev project that i deploy on server already, you can access the
 <li  color = "red">4. QR code reader, you can read QR code via using my web api || 二维码读取器</li>
 
 <a href = "https://bkdzq.github.io/qrcodereader/">https://bkdzq.github.io/qrcodereader/</a>
+
+<li  color = "red">5. Custom Language Translator(support Chinese, English, German, French and etc) || 在线多语言翻译服务(支持中文、英文、德文、日文、法文等)</li>
+
+<a href = "https://bkdzq.github.io/Translator_js/">https://bkdzq.github.io/Translator_js/</a>
