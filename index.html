@@ -2,9 +2,34 @@
 layout: default
 title: "Home"
 ---
+<head>
+    
+    <style>
+        .glow {
+          font-size: 8px;
+          color: #fff;
+          text-align: center;
+          animation: glow 1s ease-in-out infinite alternate;
+        }
+        
+        @-webkit-keyframes glow {
+          from {
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+          }
+          
+          to {
+            text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+          }
+        }
+        </style>
+</head>
 
-
+<div  class="glow">
 <h1>this is 中级错题家's site<h1>
+<h1>a passionate student who is willing to have cross-discipline knowledge and be a polyglot!<h1>
+</div>
+
+<!--  
 <h2>up承接各类计算机项目 诚信合作 负责讲解</h2>
  
  <font color = "red">以下段落 手动狗头 请不要告知up主代码用途，up只接代码，不问用途，请不要透露用途！</font>
@@ -26,7 +51,7 @@ title: "Home"
   <li>七，定金问题，由于up为项目付出了很多心血，所以无论您对项目是否满意，up认为白白肝代码而一无所获实在是太可怜了，所以一旦您交付了定金，up不再退还。</li>
   <li>八，定金问题的延续，up是个品学兼优的好学生，不会故意骗你定金的，放心好了，如果认为项目超出能力范围或者不值得投入过多精力，在<h3>三</h3>处确立可行性时就回告知</li>
   <li>以上是up关于承接项目的所有说明</li>
-</ul>
+</ul> -->
 
 
 {% if site.show_excerpts %}
