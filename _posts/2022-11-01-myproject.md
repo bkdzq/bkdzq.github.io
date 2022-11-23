@@ -43,3 +43,7 @@ below is the web-dev project that i deploy on server already, you can access the
 <li  color = "red">6. your personal navigation bar! change between Baidu and Google || 您的在线导航页 在谷歌与百度间选择搜索引擎</li>
 
 <a href = "https://bkdzq.github.io/personal_nav/">https://bkdzq.github.io/personal_nav/</a>
+
+<li  color = "red">7. text to speech conversion(able to adjust accent) || 文字转语音(可调节口音)</li>
+
+<a href = "https://bkdzq.github.io/textToSpeech/">https://bkdzq.github.io/textToSpeech/</a>
