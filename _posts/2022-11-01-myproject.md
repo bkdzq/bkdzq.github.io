@@ -5,11 +5,107 @@ layout: post
 categories: media
 ---
 
-up主所有视频代码都在b站
+<head>
+
+<style>
+  <!-- fany button -->
+ html, body {
+  height: 100%;
+}
+
+.wrap1 {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button1 {
+  min-width: 900px;
+  min-height: 60px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #313133;
+  background: #4FD1C5;
+background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+  }
+
+button::before {
+content: '';
+  border-radius: 1000px;
+  min-width: calc(900px + 12px);
+  min-height: calc(60px + 12px);
+  border: 6px solid #00FFCB;
+  box-shadow: 0 0 60px rgba(0,255,203,.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
+}
+
+.button1:hover, .button:focus {
+  color: #313133;
+  transform: translateY(-6px);
+}
+
+button:hover::before, button:focus::before {
+  opacity: 1;
+}
+
+button::after {
+  content: '';
+  width: 30px; height: 30px;
+  border-radius: 100%;
+  border: 6px solid #00FFCB;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
+button:hover::after, button:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+  }
+  100% {
+    width: 500px;
+    height: 500px;
+    opacity: 0;
+  }
+}
+<!--   fancy button -->
+</style>
+
+</head>
+
+
+up主所有视频代码都在b站 
 <br>
 https://www.bilibili.com/video/BV1TF411w7Hr/
 
-most of my projects and demostraion can u find in the link below:
+most of my projects and demostraion can u find in the link below(only a small portion of my project displyed in this website):
 <br>
 https://www.bilibili.com/video/BV1TF411w7Hr/
 
@@ -17,6 +113,52 @@ below is the web-dev project that i deploy on server already, you can access the
 <br>
 以下是已经部署在云端的云服务，您可以使用PC的google chrome访问获得体验！
 
+<div class="wrap1">
+  <button onclick="location.href='https://bkdzq.github.io/freeDeployJSDetection/'" class="button1">1.  real time face recognition || 实时人脸识别</button>
+ 
+</div>
+
+<h1>  </h1>
+<div class="wrap1">
+  <button onclick="location.href='https://bkdzq.github.io/PoliticRecog/'" class="button1">2. upload the picture to discriminate between kim, Trump and John || 上传图片以区分三胖、大统领和大金毛</button>
+ 
+</div>
+
+<h1>  </h1>
+<div class="wrap1">
+  <button onclick="location.href='https://bkdzq.github.io/qrcodegenerator/'" class="button1">3. QR code generator, you can generate QR code from texts or links || 二维码生成器</button>
+ 
+</div>
+
+<h1>  </h1>
+<div class="wrap1">
+  <button onclick="location.href='https://bkdzq.github.io/qrcodereader/'" class="button1">4. QR code reader, you can read QR code via using my web api || 二维码读取器</button>
+ 
+</div>
+
+<h1>  </h1>
+<div class="wrap1">
+  <button onclick="location.href='https://bkdzq.github.io/Translator_js/'" class="button1">5. Custom Language Translator(support Chinese, English, German, French and etc) || 在线多语言翻译服务(支持中文、英文、德文、日文、法文等)</button>
+ 
+</div>
+
+<h1>  </h1>
+<div class="wrap1">
+  <button onclick="location.href='https://bkdzq.github.io/personal_nav/'" class="button1">6. your personal navigation bar! change between Baidu and Google || 您的在线导航页 在谷歌与百度间选择搜索引擎</button>
+ 
+</div>
+
+<h1>  </h1>
+<div class="wrap1">
+  <button onclick="location.href='https://bkdzq.github.io/textToSpeech/'" class="button1">7. text to speech conversion(able to adjust accent) || 文字转语音(可调节口音)</button>
+ 
+</div>
+
+<h1>  </h1>
+
+
+<!-- 以下是之前的索引链接 弃用 -->
+<!-- 
 <li  color = "red">1.  real time face recognition || 实时人脸识别</li>
 
 <a href = "https://bkdzq.github.io/freeDeployJSDetection/">https://bkdzq.github.io/freeDeployJSDetection/</a>
@@ -46,4 +188,4 @@ below is the web-dev project that i deploy on server already, you can access the
 
 <li  color = "red">7. text to speech conversion(able to adjust accent) || 文字转语音(可调节口音)</li>
 
-<a href = "https://bkdzq.github.io/textToSpeech/">https://bkdzq.github.io/textToSpeech/</a>
+<a href = "https://bkdzq.github.io/textToSpeech/">https://bkdzq.github.io/textToSpeech/</a> -->
