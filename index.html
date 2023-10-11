@@ -6,14 +6,25 @@ title: "Home"
     
     <style>
 
-          .containerMe {
-              display: grid;
-              grid-template-columns:20% 20% 20%;
-              align-items: center;
-            
+            .image-gallery {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
             }
-              </style>
-
+    
+            .image-gallery img {
+                max-width: 100%;
+                height: auto;
+                margin: 10px;
+                border: 2px solid #333;
+                box-shadow: 5px 5px 10px #888;
+                transition: transform 0.2s;
+            }
+    
+            .image-gallery img:hover {
+                transform: scale(1.1);
+            }
+        
         
         .glow {
           font-size: 8px;
@@ -52,7 +63,7 @@ title: "Home"
 
 
  <body>
-    <div class="containerMe">
+    <div class="image-gallery">
       <div class="image"> <img src="imgData/ccna.jpg" alt="CCNA certificate" /> </div> 
       <div class="image"> <img src="imgData/contract.png" alt="hiwi"/> </div> 
      <div class="image"> <img src="imgData/iel.jpg" alt="IELTS" /> </div> 
