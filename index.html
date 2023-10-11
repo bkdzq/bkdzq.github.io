@@ -6,15 +6,19 @@ title: "Home"
     
     <style>
 
-            .image-gallery {
+            .image-gallery-container {
                 display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
+/*                 flex-wrap: wrap; */
+                justify-content: space-between;
+            }
+
+            .image-gallery {
+                flex: 1;
             }
     
             .image-gallery img {
 /*                 max-width: 100%;  */
-                max-width: 50%; /* Set to 50% for two images per row */
+                max-width: 100%; /* Set to 50% for two images per row */
                 height: auto;
                 margin: 10px;
                 border: 2px solid #333;
@@ -64,16 +68,22 @@ title: "Home"
 
 
  <body>
-    <div class="image-gallery">
-      <div class="image"> <img src="imgData/ccna.jpg" alt="CCNA certificate" /> </div> 
-      <div class="image"> <img src="imgData/contract.png" alt="hiwi"/> </div> 
+
+     <div class="image-gallery-container">
+                 <div class="image-gallery">
+                      <div class="image"> <img src="imgData/ccna.jpg" alt="CCNA certificate" /> </div> 
+                      <div class="image"> <img src="imgData/contract.png" alt="hiwi"/> </div> 
+                    
+                    </div>
+                     <div class="image-gallery">
+                      
+                     <div class="image"> <img src="imgData/iel.jpg" alt="IELTS" /> </div> 
+                         <div class="image"> <img src="imgData/mini.jpg" alt="mini thesis" /> </div> 
+            </div>
+         
+    </div>
+     
     
-    </div>
-     <div class="image-gallery">
-      
-     <div class="image"> <img src="imgData/iel.jpg" alt="IELTS" /> </div> 
-         <div class="image"> <img src="imgData/mini.jpg" alt="mini thesis" /> </div> 
-    </div>
   </body>
 
 <!--  
