@@ -1,5 +1,5 @@
 ---
-title:  "up主历史项目 || my coding project"
+title:  "youtube & bilibili视频 || youtube & bilibili social media"
 mathjax: true
 layout: post
 categories: media
