@@ -3,58 +3,7 @@ layout: default
 title: "Home"
 ---
 <head>
-<!--     
-    <style>
 
-            .image-gallery-container {
-                display: flex;
-/*                 flex-wrap: wrap; */
-                justify-content: space-between;
-            }
-
-            .image-gallery {
-                flex: 1;
-            }
-    
-            .image-gallery img {
-/*                 max-width: 100%;  */
-                max-width: 100%; /* Set to 50% for two images per row */
-                height: auto;
-                margin: 10px;
-                border: 2px solid #333;
-                box-shadow: 5px 5px 10px #888;
-                transition: transform 0.2s;
-            }
-    
-            .image-gallery img:hover {
-                transform: scale(1.1);
-            }
-        
-        
-        .glow {
-          font-size: 8px;
-          color: #fff;
-          text-align: center;
-          animation: glow 1s ease-in-out infinite alternate;
-        }
-        
-        @-webkit-keyframes glow {
-          from {
-            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-          }
-          
-          to {
-            text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-          }
-        }
-        
-        
-        
-/*         流星雨 */
-        
-/*         流星雨 */
-        
-        </style> -->
 </head>
 
 <div  class="glow">
@@ -90,21 +39,34 @@ title: "Home"
 </div>
 
 
-
-
-<!--  
-
-            
-<!--             流星雨 -->
-            
-<!--             流星雨 -->
-            
-
 {% if site.show_excerpts %}
   {% include home.html %}
 {% else %}
   {% include archive.html title="Posts" %}
 {% endif %}
+
+<style>
+  .image-gallery-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px; /* 可根據需要調整 */
+  }
+
+  .image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* 每列最小200px，且根據可用空間自適應 */
+    gap: 20px; /* 這個是每個圖片之間的間距 */
+    width: 100%; /* 保證容器寬度自適應 */
+    max-width: 1200px; /* 可以根據需要設定最大寬度 */
+  }
+
+  .image-gallery img {
+    width: 100%; /* 確保圖片自適應每個網格單元格 */
+    height: auto; /* 保持圖片比例 */
+    border-radius: 8px; /* 可以加些圓角效果 */
+  }
+</style>
+
 
 
  <body>
