@@ -2,92 +2,117 @@
 layout: default
 title: "Home"
 ---
-<head>
 
-</head>
+<style>
+  .hero {
+    text-align: center;
+    padding: 2.5rem 1rem 2rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(135deg, #667eea11 0%, #764ba211 100%);
+    border-radius: 12px;
+  }
+  .hero h1 {
+    font-size: 2rem;
+    margin: 0 0 0.5rem;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .hero .tagline {
+    color: #555;
+    font-size: 1.05rem;
+    max-width: 600px;
+    margin: 0 auto 1.5rem;
+    line-height: 1.6;
+  }
+  .badges {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+  .badge {
+    display: inline-block;
+    padding: 0.4rem 0.9rem;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: #64748b;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  }
+  .badge.highlight {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+    border: none;
+  }
 
-<div  class="glow">
-<h1>this is 中级错题家's site<h1>
+  .section-title {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 2.5rem 0 1.5rem;
+  }
 
-<h2> As a passionate student, I am eager to acquire cross-disciplinary knowledge and become a polyglot in various fields!<h1>
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1rem;
+    max-width: 900px;
+    margin: 0 auto 3rem;
+  }
+  .gallery img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+  }
+  .gallery img:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.15);
+  }
 
+  @media (max-width: 600px) {
+    .hero h1 { font-size: 1.5rem; }
+    .gallery { grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
+    .gallery img { height: 100px; }
+  }
+</style>
 
-<ul>
-  <li>
-
-          <p>
-        
-
-          As an outstanding graduate of RWTH Aachen University, I was ranked in the top 5% of the RWTH Dean's List
-          </p>
-      
-  </li>
-  <li>
-
-    <p>
-作爲亞琛工業大學的優秀畢業生，我以top5%的身份榮列RWTH Dean List
-    
-    </p>
-      
-  </li>
-
-</ul>  
-    
-
-    
-    
+<div class="hero">
+  <h1>中级错题家</h1>
+  <p class="tagline">
+    A passionate learner pursuing cross-disciplinary knowledge — striving to become a polyglot across fields.
+  </p>
+  <div class="badges">
+    <span class="badge highlight">RWTH Aachen</span>
+    <span class="badge">Top 5% · Dean's List</span>
+    <span class="badge">🎓 優秀畢業生</span>
+  </div>
 </div>
 
+<h3 class="section-title">Certifications & Achievements</h3>
+
+<div class="gallery">
+  <img src="imgData/deanlist-min.jpg" alt="RWTH Dean's List" title="RWTH Dean's List">
+  <img src="imgData/ccna.jpg" alt="CCNA Certificate" title="CCNA">
+  <img src="imgData/wzl_certification.jpg" alt="WZL Certification" title="WZL">
+  <img src="imgData/contract.png" alt="HiWi Contract" title="HiWi">
+  <img src="imgData/iel.jpg" alt="IELTS" title="IELTS">
+  <img src="imgData/mini.jpg" alt="Mini Thesis" title="Mini Thesis">
+  <img src="imgData/metallurgy1.jpg" alt="Metallurgy Competition" title="Metallurgy">
+  <img src="imgData/metallurgy2.jpg" alt="Metallurgy Competition 2" title="Metallurgy 2">
+  <img src="imgData/jlptn5.jpg" alt="JLPT N5" title="JLPT N5">
+</div>
 
 {% if site.show_excerpts %}
   {% include home.html %}
 {% else %}
   {% include archive.html title="Posts" %}
 {% endif %}
-
-<style>
-  .image-gallery-container {
-    display: flex;
-    justify-content: center;
-    margin: 20px; /* 可根據需要調整 */
-  }
-
-  .image-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* 每列最小200px，且根據可用空間自適應 */
-    gap: 20px; /* 這個是每個圖片之間的間距 */
-    width: 100%; /* 保證容器寬度自適應 */
-    max-width: 1200px; /* 可以根據需要設定最大寬度 */
-  }
-
-  .image-gallery img {
-    width: 100%; /* 確保圖片自適應每個網格單元格 */
-    height: auto; /* 保持圖片比例 */
-    border-radius: 8px; /* 可以加些圓角效果 */
-  }
-</style>
-
-
-
- <body>
-
-     <div class="image-gallery-container">
-                 <div class="image-gallery">
-                      <div class="image"> <img src="imgData/ccna.jpg" alt="CCNA certificate" /> </div> 
-                      <div class="image"> <img src="imgData/contract.png" alt="hiwi"/> </div> 
-                     <div class="image"> <img src="imgData/wzl_certification.jpg" alt="wzl-certification" /> </div> 
-                      <div class="image"> <img src="imgData/iel.jpg" alt="IELTS" /> </div> 
-                         <div class="image"> <img src="imgData/mini.jpg" alt="mini thesis" /> </div> 
-                     <div class="image"> <img src="imgData/deanlist-min.jpg" alt="deanlist-min" /> </div> 
-                     <div class="image"> <img src="imgData/metallurgy1.jpg" alt="metallurgy compete" /> </div> 
-                     <div class="image"> <img src="imgData/metallurgy2.jpg" alt="metallurgy compete 2" /> </div> 
-                     <div class="image"> <img src="imgData/jlptn5.jpg" alt="jlptn5" /> </div> 
-
-                     </div>
-                    
-                 
-         
-    </div>
-     
-    
-  </body>
